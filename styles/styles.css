@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{   
+    margin: 0;
+}
+.flex-display{
+    display: flex;
+}
+.nav-item-container{
+    list-style: none;
+}
+.nav-bar{
+    justify-content: space-between;
+    margin-top: 57px;
+}
+.nav-title{
+    font-family: inter;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 800;
+    color: #E6533C;
+}
+.banner{
+    background: linear-gradient(to right, #111111,#111111);
+}
