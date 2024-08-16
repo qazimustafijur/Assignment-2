@@ -8,37 +8,50 @@
 }
 img{
     width: 100%;
-    margin-bottom: -5px;
 }
 /* shared styles */
 .padding-general{
-    padding-left: 11rem;
-    padding-right: 11rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .small-text{
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: .9rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 18px;
+    padding: .85rem 0;
 }
 .large-text{
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     line-height: 120%;
 }
-.btn-primary{
-    border-radius: 42px;
-    background: rgb(230, 83, 60);
-    width: 240px;
-    padding: 16px;
+.semi-large-text{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.8rem;
+font-weight: 900;
+line-height: 120%;
+}
+.medium-text{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 1.1rem;
     font-weight: 600;
-    margin: 35px 15px 35px 0;
+}
+.btn-primary{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    width: 12rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 35px 2% 0 0;
 }
 .flex-display{
     display: flex;
@@ -48,7 +61,9 @@ img{
 }
 /* nav and banner section styles */
 #hero-desc{
-    font-size: 1.1rem;
+    font-size: 1rem;
+    width: 30rem;
+    line-height: 24px;
 }
 #downloadapp{
     box-sizing: border-box;
@@ -92,25 +107,119 @@ img{
 }
 .hero-section{
     justify-content: space-between;
+    padding-top: 2rem;
 }
 .hero-head{
+    width: 27rem;
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 4.9rem;
+    font-size: 4.5rem;
     font-weight: 900;
     line-height: 120%;
-    margin-bottom: 30px;
 
 }
 .hero-text{
-    width: 50%;
     margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+.hero-img{
+    background: url("../images/Images\ 2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items:end;
+    
+}
+.bottom-box{
+    right: 4.5rem;
+    bottom: 2.5rem;
+}
+.top-box{
+    bottom: 63%;
+    left: 8%;
 }
 .curve{
     font-family: Miama;
     font-weight: 400
 }
-/* Change your Habit */
-.moves{
-    
+.tutorial-box{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 11rem;
+    height: 6rem;
+    position: relative;
 }
+/* Change your Habit */
+.change-habit{
+    text-align: center;
+    padding-top: 6rem;
+}
+.moves img{
+    border-radius: 50% ;
+    width: 80%;
+}
+.moves div{
+    width: 14rem;
+}
+.moves{
+    padding-top: 3.2rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.change-habit h4{
+    margin: 30px 0 6px 0;
+}
+/* run extra mile  */
+.run-extra{
+    background: rgb(0, 0, 0);
+}
+.run-extra>div{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+.run-content{
+    justify-content: space-between;
+    padding: 2rem ;
+    gap:1rem;
+}
+.run-img-div{
+    max-width: 26rem;
+    height: 23rem;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.run-img-div img{
+    width: 90rem;
+    position: static;
+    margin-left: -45rem;
+    margin-top: -12rem;
+}
+.run-txt{
+    max-width: 40%;
+}
+/* BMI Calc  */
+.bmi-title{
+    padding: 7% 22%;
+
+}
+.bmi-calc{
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+    padding-top: 3.2rem;
+}
+.bmi-calc td,.bmi-calc th{
+    padding: .85rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 9rem;
+    text-align: center;
+}
+.bmi-calc-d2{
+    width: 40vh;
+}
+
+.bmi-calc table{border-collapse: collapse;}
