@@ -351,4 +351,27 @@ hr{
     text-align: center;
     font-weight: 400;
 }
-/* play button */
+/* diet */
+.diet{
+    text-align: center;
+    padding-top: 3rem;
+}
+.diet-collage{
+    background: rgb(34, 34, 34);
+    padding: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 5.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    grid-template-rows: repeat(2,50%);
+    justify-content: center;
+    gap: 3rem 1rem;
+    width: 100%;
+}
+.diet-collage img{
+    height:100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
