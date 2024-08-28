@@ -14,13 +14,21 @@ img{
     padding-left: 10%;
     padding-right: 10%;
 }
-.small-text{
+.small-text,input::placeholder{
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: .9rem;
     font-weight: 400;
     line-height: 18px;
     padding: .85rem 0;
+}
+.semi-small{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 6px;
 }
 .large-text{
     color: rgb(255, 255, 255);
@@ -33,8 +41,8 @@ img{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 1.8rem;
-font-weight: 900;
-line-height: 120%;
+    font-weight: 900;
+    line-height: 120%;
 }
 .medium-text{
     color: rgb(255, 255, 255);
@@ -58,6 +66,14 @@ line-height: 120%;
 }
 .black-background{
     background: black;
+}
+.medium-large-text{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    margin-bottom: 5px;
 }
 /* nav and banner section styles */
 #hero-desc{
@@ -131,20 +147,13 @@ line-height: 120%;
     align-items:end;
     
 }
-.bottom-box{
-    right: 4.5rem;
-    bottom: 2.5rem;
-}
-.top-box{
-    bottom: 63%;
-    left: 8%;
-}
 .curve{
     font-family: Miama;
     font-weight: 400
 }
 .tutorial-box{
     box-sizing: border-box;
+    padding: 5% 2% 5% 5%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(5px);
@@ -152,6 +161,31 @@ line-height: 120%;
     width: 11rem;
     height: 6rem;
     position: relative;
+}
+.bottom-box{
+    right: 4.5rem;
+    bottom: 2.5rem;
+    display: flex;
+    gap:.5rem
+}
+.top-box{
+    bottom: 63%;
+    left: 8%;
+}
+.vtnum{
+    font-size: 1.5rem;
+}
+.play-button{
+    margin: 8% 0;
+    color: white;
+    padding: 6px 0;
+    width: 2rem;
+    height: max-content;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #E6533C;
 }
 /* Change your Habit */
 .change-habit{
@@ -161,10 +195,10 @@ line-height: 120%;
 }
 .moves img{
     border-radius: 50% ;
-    width: 80%;
+    width: 14vw;
 }
 .moves div{
-    width: 14rem;
+    width: 14vw;
 }
 .moves{
     padding-top: 3.2rem;
@@ -212,9 +246,10 @@ line-height: 120%;
     background: rgb(34, 34, 34);
     justify-content: space-between;
     padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
 }
 .bmi-calc td,.bmi-calc th{
-    padding: .85rem 0;
+    padding: .85rem 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 9rem;
     text-align: center;
@@ -224,3 +259,96 @@ line-height: 120%;
 }
 
 .bmi-calc table{border-collapse: collapse;}
+.bmi-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30%, 100%));
+    gap:.8rem;
+    margin-top: 2rem;
+    
+}
+.bmi-grid *{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border: none;
+}
+#bmi-activity{
+    grid-column: span 2;
+}
+/* Trainer collage */
+.Trainer{
+    text-align: center;
+    padding-top: 5rem;
+}
+.trainer-collage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: left;
+    gap:20px;
+    padding: 20px;
+    background: rgb(34, 34, 34);
+    border-radius: 20px;
+    ;
+    margin-top: 3.5rem;
+}
+.trainer-collage>div{
+    height: 36vh;
+    width: 100%;
+    border-radius: 18px;
+    margin: auto;
+    opacity: 0.8;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+.trainer-collage h4,.trainer-collage p{
+    position: relative;
+    top:80%;
+    left: 7%;
+    padding: 0;
+}
+/* contacts */
+.contacts{
+    background: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: 35% 20% 20%;
+    padding-top: 4rem;
+    gap: 5%;
+    justify-content: space-between;
+}
+.contacts h3{
+    padding-bottom: 20px;
+}
+hr{
+    grid-column: span 3;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 5rem 0;
+    width: 100%;
+}
+.collage-1{
+    background: url(../images/trainer1.png);
+}
+.collage-2{
+    background: url(../images/trainer2.png);
+}
+.collage-3{
+    background: url(../images/trainer3.png);
+}
+.collage-4{
+    background: url(../images/trainer4.png);
+}
+.collage-5{
+    background: url(../images/trainer5.png);
+}
+.collage-6{
+    background: url(../images/trainer6.png);
+}
+.copyright{
+    grid-column: span 3;
+    background: rgb(34, 34, 34);
+    padding-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-weight: 400;
+}
+/* play button */
