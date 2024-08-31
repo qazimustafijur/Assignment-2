@@ -370,7 +370,7 @@ img{
     text-align: center;
 }
 .bmi-calc-d2{
-    width: 40vh;
+    width: 50%;
 }
 
 .bmi-calc table{border-collapse: collapse;}
@@ -407,7 +407,7 @@ img{
     margin-top: 3.5rem;
 }
 .trainer-collage>div{
-    height: 36vh;
+    height: 45vh;
     width: 100%;
     border-radius: 18px;
     margin: auto;
